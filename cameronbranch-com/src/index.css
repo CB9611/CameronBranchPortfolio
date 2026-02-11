@@ -1,0 +1,111 @@
+:root {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-black: #0a0a0a;
+  --bg-grey: #1a1a1a;
+  --primary-purple: #9d4edd;
+  --purple-faint: rgba(157, 78, 221, 0.12);
+  --text-main: #f8f9fa;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-grey);
+  color: var(--text-main);
+  
+  background-image: 
+    radial-gradient(circle at 15% 15%, var(--purple-faint) 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, var(--purple-faint) 0%, transparent 35%);
+  background-attachment: fixed;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+
+  /* SVG Masking */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-purple); /* Simple coloring! */
+}
+
+.home {
+  -webkit-mask-image: url('./assets/home.svg');
+  mask-image: url('./assets/home.svg');
+}
+
+.github {
+  -webkit-mask-image: url('./assets/github.svg');
+  mask-image: url('./assets/github.svg');
+}
+
+.linkedin {
+  -webkit-mask-image: url('./assets/linkedin.svg');
+  mask-image: url('./assets/linkedin.svg');
+}
+
+.content-area {
+  flex: 1;
+}
+
+.hero-container {
+  
+}
+
+.footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: var(--primary-purple);
+}

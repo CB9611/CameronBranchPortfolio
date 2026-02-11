@@ -1,0 +1,93 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  width: 100%;
+  padding-bottom: 10vh;
+}
+
+/* Header CSS */
+.name-header {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), var(--primary-purple), #9d4edd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+}
+
+.title-container {
+  height: 6.5rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.title-text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.6); /* Faded white */
+  font-weight: 400;
+  animation: slideUp 0.5s ease-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-download-btn {
+  background-color: var(--purple-faint);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 105px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.resume-download-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-purple);
+  color: black;
+}
+
+.resume-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.download-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+  transition: background-color 0.3s ease;
+
+  /* SVG Masking */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.download {
+  -webkit-mask-image: url('../assets/download.svg');
+  mask-image: url('../assets/download.svg');
+}
