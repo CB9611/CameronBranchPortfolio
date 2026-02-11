@@ -7,11 +7,15 @@
   --bg-grey: #1a1a1a;
   --primary-purple: #9d4edd;
   --purple-faint: rgba(157, 78, 221, 0.12);
+  --blue-pastel: rgba(179, 240, 255, 1);
+  --blue-faint: rgba(0, 212, 255, 0.12);
+  --pink-pastel: rgba(226, 149, 211, 1);
   --text-main: #f8f9fa;
 }
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -85,10 +89,6 @@ a:hover {
 
 .content-area {
   flex: 1;
-}
-
-.hero-container {
-  
 }
 
 .footer {

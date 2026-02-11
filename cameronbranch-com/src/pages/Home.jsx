@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Home.css'
+import Skills from '../components/skills/Skills.jsx'
 
 const titles = ["Developer", "React.js", "Innovator", "IT Professional"];
 
@@ -26,19 +27,7 @@ function Home() {
             </span>
           </div>
         </div>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          download="Cameron_Branch_Resume_2026.pdf"
-          className="resume-download-btn"
-          title="Download my resume!"
-        >
-          <div className="resume-download">
-            Resume
-            <p className="download-icon download" />
-          </div>
-        </a>
+        <Skills />
       </div>
     </>
   )
