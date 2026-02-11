@@ -8,12 +8,17 @@
   padding-bottom: 10vh;
 }
 
+.content-container {
+  max-width: 1600px;
+}
+
 /* Header CSS */
 .name-header {
   font-size: 6rem;
   font-weight: 800;
   margin: 0;
   white-space: nowrap;
+  text-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
 }
 .name-header, .title-text {
   background: linear-gradient(
@@ -28,6 +33,7 @@
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
   animation: flow 10s linear infinite;
+  text-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
 }
 @keyframes flow {
   0% {

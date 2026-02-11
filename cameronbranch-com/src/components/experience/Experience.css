@@ -1,0 +1,86 @@
+.experience-section {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-container {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: default;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-purple);
+  background: var(--purple-faint);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(157, 78, 221, 0.2);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.exp-years {
+  color: var(--soft-pink);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.exp-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0, 255, 255, 0.1);
+  color: var(--blue-neon);
+  padding: 4px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--blue-neon);
+}
+
+.exp-degree {
+  font-size: 1.6rem;
+  color: var(--blue-pastel);
+  margin-bottom: 8px;
+}
+
+.exp-school {
+  color: var(--blue-neon);
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.exp-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1199px) {
+  .experience-container {
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}

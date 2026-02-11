@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import './Home.css'
-import Skills from '../components/skills/Skills.jsx'
+import Biography from '../../components/biography/Biography.jsx'
+import Education from '../../components/education/Education.jsx'
+import Experience from '../../components/experience/Experience.jsx'
+import Skills from '../../components/skills/Skills.jsx'
 
 const titles = ["Developer", "React.js", "Innovator", "IT Professional"];
 
@@ -8,7 +11,7 @@ function Home() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() =>{
+    const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % titles.length);
     }, 5000);
     return () => clearInterval(interval);
@@ -27,7 +30,12 @@ function Home() {
             </span>
           </div>
         </div>
-        <Skills />
+        <div className="content-container">
+          <Biography />
+          <Skills />
+          <Experience />
+          <Education />
+        </div>
       </div>
     </>
   )

@@ -55,21 +55,22 @@ a:hover {
 
 .social-icon {
   display: block;
-  width: 28px;
-  height: 28px;
-  background-color: white;
-  transition: background-color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-purple);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   /* SVG Masking */
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   mask-size: contain;
+  backface-visibility: hidden;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
-  background-color: var(--primary-purple); /* Simple coloring! */
+  transform: scale(1.15);
+  background-color: var(--pink-pastel);
 }
 
 .home {

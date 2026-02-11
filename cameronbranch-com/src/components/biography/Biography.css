@@ -1,0 +1,50 @@
+.biography-section {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.biography-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.biography-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: default;
+}
+
+.biography-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-purple);
+  background: var(--purple-faint);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(157, 78, 221, 0.2);
+}
+
+.biography-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1199px) {
+  .education-container {
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}
