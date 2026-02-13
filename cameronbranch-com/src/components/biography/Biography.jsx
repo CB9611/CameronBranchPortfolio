@@ -4,7 +4,7 @@ import './Biography.css';
 const Biography = () => {
   const biographyData = [
     {
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis ipsum ac dignissim egestas. Phasellus convallis fermentum ipsum ut ornare. Suspendisse in lectus vitae lacus blandit malesuada. Aliquam nec lectus at dolor faucibus pretium. Vivamus mi eros, lacinia a ex a, consequat ornare mauris. Cras gravida et enim nec lobortis. Donec aliquet nibh quis augue consequat feugiat. Ut metus nisi, maximus et orci non, pulvinar pellentesque turpis. Morbi aliquam, mi cursus ullamcorper sollicitudin, neque arcu imperdiet nulla, in sagittis tellus enim vitae ante. Quisque semper mauris odio, a mattis elit accumsan commodo. Ut sed tortor id ipsum fringilla pellentesque. Fusce semper ipsum sed erat venenatis, sed feugiat odio semper. Maecenas consequat purus nec lectus pellentesque, a malesuada tortor pharetra."
+      description: "I’m an IT professional turned Frontend Developer who bridges the gap between enterprise infrastructure and modern user experiences. With a background in managing high-availability systems like Active Directory and VMware, I bring a unique 'systems-first' perspective to my code. My most notable achievement was designing the React-based interface for the IMASS platform, a project that directly helped secure $8,000,000 in federal funding for my university. I don’t just build interfaces; I build scalable solutions that drive real-world results."
     }
   ];
 

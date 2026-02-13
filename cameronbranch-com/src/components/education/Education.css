@@ -54,7 +54,7 @@
 }
 
 .edu-status {
-  font-size: 0.75rem;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
   background: rgba(0, 255, 255, 0.1);
@@ -65,7 +65,6 @@
 }
 
 .edu-degree {
-  font-size: 1.6rem;
   color: var(--blue-pastel);
   margin-bottom: 8px;
 }
@@ -74,13 +73,12 @@
   color: var(--blue-neon);
   font-weight: 500;
   margin-bottom: 15px;
-  font-size: 1.1rem;
 }
 
 .edu-description {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
 @media (max-width: 1199px) {

@@ -1,10 +1,16 @@
 import React from 'react';
 import './Experience.css';
 
+// import company logos
+import sparkhoundLogo from '../../assets/work-images/sparkhound.jpg'
+import youtubeLogo from '../../assets/work-images/youtube.jpg'
+import walmartLogo from '../../assets/work-images/walmart.jpg'
+
 const Education = () => {
     const experienceData = [
         {
             company: "Sparkhound LLC",
+            logo: sparkhoundLogo,
             title: "Tier 1 Service Desk Technician",
             location: "Baton Rouge, LA, USA (Remote)",
             years: "February 2021 - Present (Full-time)",
@@ -18,6 +24,7 @@ const Education = () => {
         },
         {
             company: "YouTube",
+            logo: youtubeLogo,
             title: "Content Creator",
             location: "Remote",
             years: "July 2014 - Present",
@@ -26,11 +33,10 @@ const Education = () => {
             description2: "Data-Driven Content Strategy: Utilized YouTube Analytics to monitor viewer retention, click-through rates (CTR), and demographic data to pivot content strategies across major titles like Fallout 4 and Destiny.",
             description3: "Multimedia Production: Managed the end-to-end creative lifecycle, including technical scripting, high-fidelity video editing, and SEO optimization to maintain search visibility.",
             description4: "Community Leadership: Cultivated a loyal audience through active community management, moderating discussions, and maintaining a consistent brand voice across social platforms.",
-            description5: "",
-            description6: "",
         },
         {
             company: "Walmart",
+            logo: walmartLogo,
             title: "Electronics Sales Associate",
             location: "Denham Springs, LA, USA",
             years: "November 2016 - January 2020",
@@ -39,8 +45,6 @@ const Education = () => {
             description2: "Product Subject Matter Expert: Translated complex technical specifications into actionable advice for customers, assisting in product selection and ensuring device compatibility for end-users.",
             description3: "Operational Efficiency: Managed high-volume transactions and inventory systems with 100% accuracy, while maintaining a 95%+ customer satisfaction rating in a fast-paced, high-pressure retail environment.",
             description4: "System Maintenance: Assisted in the setup and maintenance of department display units and internal point-of-sale (POS) systems to ensure 24/7 operational uptime for the department.",
-            description5: "",
-            description6: "",
         }
     ];
 
@@ -50,18 +54,28 @@ const Education = () => {
             <div className="experience-container">
                 {experienceData.map((exp, index) => (
                     <div className="experience-card" key={index}>
-                        <div className="edu-header">
+                        <div className="exp-header">
                             <span className="exp-years">{exp.years}</span>
                             <span className="exp-status">{exp.status}</span>
                         </div>
-                        <h3 className="exp-degree">{exp.company}</h3>
-                        <h4 className="exp-school">{exp.title}</h4>
-                        <p className="exp-description">{exp.description1}</p>
-                        <p className="exp-description">{exp.description2}</p>
-                        <p className="exp-description">{exp.description3}</p>
-                        <p className="exp-description">{exp.description4}</p>
-                        <p className="exp-description">{exp.description5}</p>
-                        <p className="exp-description">{exp.description6}</p>
+                        <div className="company-info-wrapper">
+                            <div className="logo-container">
+                                <img src={exp.logo} alt={`${exp.company} logo`} className="company-logo" />
+                            </div>
+                            <h1 className="exp-company">{exp.company}</h1>
+                        </div>
+                        <h3 className="exp-title">{exp.title}</h3>
+                        <ul className="exp-description-list">
+                            {Object.keys(exp)
+                                .filter((key) => key.startsWith("description"))
+                                .map((key, idx) => {
+                                    return (
+                                        <li key={idx} className="exp-description-item">
+                                            {exp[key]}
+                                        </li>
+                                    );
+                                })}
+                        </ul>
                     </div>
                 ))}
             </div>

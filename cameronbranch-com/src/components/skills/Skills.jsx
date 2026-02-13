@@ -23,7 +23,7 @@ const Skills = () => {
             <div className="skills-grid">
                 {skillsCategories.map((cat, index) => (
                     <div className="skill-card" key={index}>
-                        <h3>{cat.title}</h3>
+                        <h2>{cat.title}</h2>
                         <div className="skill-tags">
                             {cat.skills.map((skill, i) => (
                                 <span key={i}>{skill}</span>
