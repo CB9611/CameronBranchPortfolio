@@ -3,6 +3,7 @@ import './Home.css'
 import Biography from '../../components/biography/Biography.jsx'
 import Education from '../../components/education/Education.jsx'
 import Experience from '../../components/experience/Experience.jsx'
+import Projects from '../../components/projects/Projects.jsx'
 import Skills from '../../components/skills/Skills.jsx'
 
 const titles = ["Developer", "React.js", "Innovator", "IT Professional"];
@@ -34,6 +35,7 @@ function Home() {
           <Biography />
           <Skills />
           <Experience />
+          <Projects />
           <Education />
         </div>
       </div>
