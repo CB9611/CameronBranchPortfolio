@@ -41,6 +41,10 @@
     max-width: 90vw;
     margin: auto;
   }
+  
+  .biography-container {
+    max-width: 90vw;
+  }
 }
 
 @media (max-width: 480px) {

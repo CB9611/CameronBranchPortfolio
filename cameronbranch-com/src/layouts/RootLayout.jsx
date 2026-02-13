@@ -29,7 +29,7 @@ const RootLayout = () => {
 
             <footer className="footer">
                 <p>
-                    © {new Date().getFullYear()} Cameron Branch • Powered by{' '}
+                    © Cameron Branch {new Date().getFullYear()}, unless otherwise noted. All rights reserved. • Powered by{' '}
                     <a href="https://react.dev" target="_blank" rel="noopener noreferrer">React</a> &{' '}
                     <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">Vite</a>
                 </p>
