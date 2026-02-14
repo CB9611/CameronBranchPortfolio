@@ -13,7 +13,7 @@ const Education = () => {
             logo: sparkhoundLogo,
             title: "Tier 1 Service Desk Technician",
             location: "Baton Rouge, LA, USA (Remote)",
-            years: "February 2021 - Present (Full-time)",
+            years: "February 2021 - Present",
             status: "Current",
             description1: "Enterprise Infrastructure Support: Deliver Tier 1 technical support within a high-volume Managed Services Provider (MSP) environment, resolving complex OS, application, and connectivity issues for diverse enterprise clients.",
             description2: "Identity & Access Management (IAM): Administer user accounts, group memberships, and security permissions through Active Directory, ensuring secure and timely access to critical business resources.",
