@@ -9,7 +9,7 @@ const Skills = () => {
         },
         {
             title: "IT Infrastructure",
-            skills: ["Active Directoy", "VMware", "Citrix", "Identity & Access Management (IAM)", "PowerShell"]
+            skills: ["Active Directory", "VMware", "Citrix", "Identity & Access Management (IAM)", "PowerShell"]
         },
         {
             title: "Technical Strategy",

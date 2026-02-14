@@ -18,6 +18,16 @@
   padding: 0;
 }
 
+::selection {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
