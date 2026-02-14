@@ -1,6 +1,5 @@
 .projects-section {
   padding-top: 80px;
-  
   max-width: 1200px;
 }
 
@@ -26,8 +25,7 @@
   transform: translateY(-5px);
   border-color: var(--primary-purple);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-                0 0 20px rgba(157, 78, 221, 0.2);
-  
+    0 0 20px rgba(157, 78, 221, 0.2);
 }
 
 .project-card:hover::after {
@@ -38,11 +36,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -81,6 +77,8 @@
   align-items: center;
   z-index: 10;
   pointer-events: none;
+  padding: 30px;
+  text-align: center;
 }
 
 .project-name {
@@ -88,12 +86,30 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .project-tagline {
-  color: #fff;
-  opacity: 0.8;
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  margin-top: 0;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    margin-top 0.3s ease;
+}
+
+.project-card:hover .project-tagline {
+  opacity: 1;
+  visibility: visible;
+  max-height: 200px;
 }
 
 .project-card:hover .scrolling-wrapper {
@@ -103,30 +119,52 @@
 .scroll-image {
   width: 100cqw;
 }
+
 @keyframes slideAndPause {
+
   /* 0-15%: Image 1 sits (0%) */
-  0%, 15% { transform: translateX(0); }
-  
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+
   /* 20-35%: Image 2 sits (1 image width over) */
-  20%, 35% { transform: translateX(-100cqw); }
-  
+  20%,
+  35% {
+    transform: translateX(-100cqw);
+  }
+
   /* 40-55%: Image 3 sits */
-  40%, 55% { transform: translateX(-200cqw); }
-  
+  40%,
+  55% {
+    transform: translateX(-200cqw);
+  }
+
   /* 60-75%: Image 4 sits */
-  60%, 75% { transform: translateX(-300cqw); }
-  
+  60%,
+  75% {
+    transform: translateX(-300cqw);
+  }
+
   /* 80-95%: Image 5 sits */
-  80%, 95% { transform: translateX(-400cqw); }
-  
+  80%,
+  95% {
+    transform: translateX(-400cqw);
+  }
+
   /* 100%: Reset to the start of the duplicate set */
-  100% { transform: translateX(-500cqw); }
+  100% {
+    transform: translateX(-500cqw);
+  }
 }
 
 @media (max-width: 1199px) {
   .scrolling-wrapper {
     max-width: 90vw;
     margin: auto;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 

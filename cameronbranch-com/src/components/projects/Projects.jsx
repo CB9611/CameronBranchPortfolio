@@ -39,13 +39,13 @@ const Projects = () => {
   const myProjects = [
     {
       name: "IMASS",
-      tagline: "Integrated Modeling and Simulation System",
+      tagline: "The Integrated Modeling and Simulation System (IMASS) is a unified digital platform designed to bring multiple environmental and physical process models together into a single, easy-to-use interface.",
       github: "https://github.com/CB9611/IMASS_2025",
       images: [imass1, imass2, imass3, imass4, imass5]
     },
     {
       name: "EnTrack",
-      tagline: "Enterprise Tracking & Inventory Management",
+      tagline: "EnTrack is a custom digital ecosystem designed to redefine passenger rail by prioritizing route efficiency and seamless user interaction. The platform streamlines the travel experience through mobile boarding and sophisticated route planning, providing a modern, cost-effective alternative to traditional airline travel.",
       github: "https://github.com/CB9611/CMPS-383-Spring-2023-EnTrack",
       images: [entrack1, entrack2, entrack3, entrack4, entrack5]
     }

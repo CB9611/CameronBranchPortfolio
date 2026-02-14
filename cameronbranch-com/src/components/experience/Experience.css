@@ -81,7 +81,7 @@
 }
 
 .exp-description-item::before {
-  content: ">";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--primary-purple);
@@ -111,9 +111,9 @@
 }
 
 .logo-container {
-  height: 45px;
-  width: 45px;
-  min-width: 45px; 
+  height: 30px;
+  width: 30px;
+  min-width: 30px; 
   background: white;
   border-radius: 50%;
   display: flex;
