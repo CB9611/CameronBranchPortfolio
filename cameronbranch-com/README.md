@@ -1,16 +1,31 @@
-# React + Vite
+# Hi, I’m Cameron 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Frontend Developer (React.js) | IT Systems & IAM Specialist
 
-Currently, two official plugins are available:
+I’m an IT professional turned **Frontend Developer** who bridges the gap between enterprise infrastructure and modern user experiences. With a background in managing high-availability systems like Active Directory and VMware, I bring a unique 'systems-first' perspective to my code. My most notable achievement was designing the React-based interface for the IMASS platform, a project that directly helped secure **$8,000,000** in federal funding for my university. I don’t just build interfaces; I build scalable solutions that drive real-world results.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### 🚀 The "8-Million Dollar" Project: IMASS
+My work focuses on the intersection of **Legacy Modernization** and **Cloud Integration**. 
+* **Key Achievement:** Architected and developed the interface for the **IMASS** project, which successfully containerized legacy Fortran models.
+* **Impact:** This modernization effort was the catalyst in securing **$8M in Congressional funding** for my university.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+### 🛡️ Technical Arsenal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Frontend | IT Infrastructure | Technical Strategy |
+| :--- | :--- | :--- |
+| React.js + Vite | Active Directory | User Interface Design |
+| HTML5, CSS3 | VMware, Citrix | Software Development Life Cycle (SDLC) |
+| JavaScript | Identity & Access Management (IAM) | Cross-functional Collaborations |
+
+---
+
+### 🏙️ The Mission
+I am currently transitioning my 5+ years of internal systems knowledge at Sparkhound into full-time **Frontend Development**.
+
+📫 **Reach out if you want to talk about Modernization, Development, or the future of Web Architecture.**
+
+[LinkedIn](https://www.linkedin.com/in/cb9611/) | [Portfolio Site](https://cameronbranch.com)
