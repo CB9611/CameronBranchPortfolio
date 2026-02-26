@@ -12,6 +12,11 @@ import entrack2 from '../../assets/project-images/entrack/entrack2.jpg'
 import entrack3 from '../../assets/project-images/entrack/entrack3.jpg'
 import entrack4 from '../../assets/project-images/entrack/entrack4.jpg'
 import entrack5 from '../../assets/project-images/entrack/entrack5.jpg'
+import sylena1 from '../../assets/project-images/project-sylena/sylena1.png'
+import sylena2 from '../../assets/project-images/project-sylena/sylena2.png'
+import sylena3 from '../../assets/project-images/project-sylena/sylena3.png'
+import sylena4 from '../../assets/project-images/project-sylena/sylena4.png'
+import sylena5 from '../../assets/project-images/project-sylena/sylena5.png'
 
 const ProjectCard = ({ project }) => {
 
@@ -48,6 +53,12 @@ const Projects = () => {
       tagline: "EnTrack is a custom digital ecosystem designed to redefine passenger rail by prioritizing route efficiency and seamless user interaction. The platform streamlines the travel experience through mobile boarding and sophisticated route planning, providing a modern, cost-effective alternative to traditional airline travel.",
       github: "https://github.com/CB9611/CMPS-383-Spring-2023-EnTrack",
       images: [entrack1, entrack2, entrack3, entrack4, entrack5]
+    },
+    {
+      name: "Project Sylena",
+      tagline: "Experience your music in high fidelity. Project Sylena connects to your Spotify profile to generate a visual-first showcase of your top 25 most played tracks.",
+      github: "https://project-sylena.cameronbranch.com",
+      images: [sylena1, sylena2, sylena3, sylena4, sylena5]
     }
   ];
 

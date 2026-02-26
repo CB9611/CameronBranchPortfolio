@@ -46,6 +46,7 @@
 .scrolling-wrapper {
   display: flex;
   width: max-content;
+  height: 100%;
   animation: slideAndPause 40s cubic-bezier(0.85, 0, 0.15, 1) infinite;
 }
 
@@ -118,6 +119,10 @@
 
 .scroll-image {
   width: 100cqw;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
 }
 
 @keyframes slideAndPause {
