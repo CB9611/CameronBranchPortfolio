@@ -5,6 +5,7 @@ const Education = () => {
   const educationData = [
     {
       institution: "Southeastern Louisiana University",
+      website: "https://www.southeastern.edu/majors-and-minors/information-technology-bs/",
       degree: "B.S. in Information Technology",
       years: "2020 - 2025",
       status: "Graduated",
@@ -12,6 +13,7 @@ const Education = () => {
     },
     {
       institution: "Northshore Technical Community College",
+      website: "https://catalog.northshorecollege.edu/programs/AGS-GENN",
       degree: "Associate of General Studies",
       years: "2017 - 2019",
       status: "Graduated",
@@ -24,7 +26,7 @@ const Education = () => {
       <h2 className="section-header">Education</h2>
       <div className="education-container">
         {educationData.map((edu, index) => (
-          <div className="education-card" key={index}>
+          <a href={edu.website} target="_blank" rel="noopener noreferrer" className="education-card" key={index}>
             <div className="edu-header">
               <span className="edu-years">{edu.years}</span>
               <span className="edu-status">{edu.status}</span>
@@ -32,7 +34,7 @@ const Education = () => {
             <h1 className="edu-degree">{edu.degree}</h1>
             <h3 className="edu-school">{edu.institution}</h3>
             <p className="edu-description">{edu.description}</p>
-          </div>
+          </a>
         ))}
       </div>
     </section>

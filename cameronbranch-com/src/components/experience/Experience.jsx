@@ -10,6 +10,7 @@ const Education = () => {
     const experienceData = [
         {
             company: "Sparkhound LLC",
+            website: "https://www.sparkhound.com/",
             logo: sparkhoundLogo,
             title: "Tier 1 Service Desk Technician",
             location: "Baton Rouge, LA, USA (Remote)",
@@ -24,6 +25,7 @@ const Education = () => {
         },
         {
             company: "YouTube",
+            website: "https://youtube.com/",
             logo: youtubeLogo,
             title: "Content Creator",
             location: "Remote",
@@ -36,6 +38,7 @@ const Education = () => {
         },
         {
             company: "Walmart",
+            website: "https://walmart.com/",
             logo: walmartLogo,
             title: "Electronics Sales Associate",
             location: "Denham Springs, LA, USA",
@@ -53,7 +56,7 @@ const Education = () => {
             <h2 className="section-header">Experience</h2>
             <div className="experience-container">
                 {experienceData.map((exp, index) => (
-                    <div className="experience-card" key={index}>
+                    <a href={exp.website} target="_blank" rel="noopener noreferrer" className="experience-card" key={index}>
                         <div className="exp-header">
                             <span className="exp-years">{exp.years}</span>
                             <span className="exp-status">{exp.status}</span>
@@ -76,7 +79,7 @@ const Education = () => {
                                     );
                                 })}
                         </ul>
-                    </div>
+                    </a>
                 ))}
             </div>
         </section>
