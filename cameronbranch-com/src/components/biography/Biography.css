@@ -36,6 +36,10 @@
   font-size: 16px;
 }
 
+.biography-description:not(:last-child) {
+  margin-bottom: 16px;  
+}
+
 @media (max-width: 1199px) {
   .education-container {
     max-width: 90vw;

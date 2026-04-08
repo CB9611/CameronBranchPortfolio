@@ -3,20 +3,21 @@ import './Biography.css';
 
 const Biography = () => {
   const biographyData = [
-    {
-      description: "I’m an IT professional turned Frontend Developer who bridges the gap between enterprise infrastructure and modern user experiences. With a background in managing high-availability systems like Active Directory and VMware, I bring a unique 'systems-first' perspective to my code. My most notable achievement was designing the React-based interface for the IMASS platform, a project that directly helped secure $8,000,000 in federal funding for my university. I don’t just build interfaces; I build scalable solutions that drive real-world results."
-    }
+    "I discovered my passion for frontend development in a single semester. After learning Java basics, I enrolled in CMPS 285 and went from zero to building and publishing a live React-based website by the end of the course. That was the moment everything clicked. I knew React, HTML, CSS, and JavaScript were where I wanted to build my career.",
+    "Since then I've been building. My most significant project to date is IMASS, a React-based simulation platform I led frontend development on during my capstone at Southeastern Louisiana University. The platform's demonstration secured $8,000,000 in federal funding from the United States Congress. I've also built a full-stack Spotify dashboard using React, FastAPI, and OAuth 2.0, deployed across Cloudflare and Azure, later migrated to Render for cost efficiency.",
+    "The junior developer market is tough right now. But I'm not going anywhere. React development isn't just a career goal, it's where I'm headed, and I'm putting in the work every day to get there.",
+    "I'm actively relocating to Charlotte, NC. I'm drawn to the city for its southern familiarity, its energy, and especially its growing FinTech scene. Charlotte is where I'm planting my flag for the long-haul."
   ];
 
   return (
     <section className="biography-section">
       <h2 className="section-header">Biography</h2>
       <div className="biography-container">
-        {biographyData.map((desc, index) => (
-          <div className="biography-card" key={index}>
-            <p className="biography-description">{desc.description}</p>
-          </div>
-        ))}
+        <div className="biography-card">
+          {biographyData.map((desc, index) => (
+        <p className="biography-description" key={index}>{desc}</p>
+      ))}
+        </div>
       </div>
     </section>
   );
