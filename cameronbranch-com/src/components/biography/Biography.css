@@ -30,6 +30,28 @@
                 0 0 20px rgba(157, 78, 221, 0.2);
 }
 
+.relocation-pill {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(157, 78, 221, 0.1);
+    border: 1px solid rgba(157, 78, 221, 0.3);
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    gap: 8px;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.location-icon { font-size: 1rem; }
+.location-arrow { color: #9d4edd; font-weight: bold; }
+.location-destination { color: #fff; font-weight: 600; }
+
 .biography-description {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
